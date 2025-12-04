@@ -5,7 +5,7 @@ from jose import jwt, JWTError
 from fastapi import Request, HTTPException, status
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 
-# ------------------ Password Hashing ------------------
+# ------------------ Password Hashing ----------------------
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 def hash_password(password: str) -> str:
